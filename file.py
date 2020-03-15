@@ -70,6 +70,23 @@ while flag==1:
             print(b)
             flag=0
             break
-
+    if s[-1]=='4':
+        a=eval((str(s)+"5"))
+        if a%n!=0:
+            q.enqueue(a)
+        else:
+            print(a)
+            flag=0
+            break
+    if s[-1]=='5':
+        for j in range(6):
+            a=eval(str(s)+str(j))
+            if a%n!=0:
+                q.enqueue(a)
+            else:
+                print(a)
+                flag=0
+                break
+    s=str(q.dequeue())
 
 
