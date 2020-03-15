@@ -40,3 +40,36 @@ while flag==1:
             print(b)
             flag=0
             break
+    if s[-1]=="2":
+        a=eval((str(s)+"3"))
+        if a%n!=0:
+            q.enqueue(a)
+        else:
+            print(a)
+            flag=0
+            break
+        b=eval((str(s)+"4"))
+        if b%n!=0:
+            q.enqueue(b)
+        else:
+            print(b)
+            flag=0
+            break
+    if s[-1]=='3':
+        a=eval((str(s)+"1"))
+        if a%n!=0:
+            q.enqueue(a)
+        else:
+            print(a)
+            flag=0
+            break
+        b=eval((str(s)+"4"))
+        if b%n!=0:
+            q.enqueue(b)
+        else:
+            print(b)
+            flag=0
+            break
+
+
+
