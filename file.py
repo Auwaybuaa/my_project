@@ -24,4 +24,19 @@ for x in lst:
         break
 q.items=['5','4','3','2']
 s=str(1)
-
+while flag==1:
+    if s[-1]=="1":
+        a=eval((str(s)+"3"))
+        if a%n!=0:
+            q.enqueue(a)
+        else:
+            print(a)
+            flag=0
+            break
+        b=eval((str(s)+"5"))
+        if b%n!=0:
+            q.enqueue(b)
+        else:
+            print(b)
+            flag=0
+            break
